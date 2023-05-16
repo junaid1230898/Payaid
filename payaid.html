@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payaid</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: rgb(218, 220, 224);;
+        }
+        .navi-grandpa{
+            display: flex;
+            justify-content: space-between;
+            border: solid 2px rgb(7, 7, 7);
+            padding-top: 10px;
+            align-items: center;
+            background-color: rgb(10, 10, 10);
+            color: white;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navi-father2{
+            display: flex;
+            margin-right: 170px;
+            
+        }
+        .navi-father1{
+            margin-left: 130px;
+        }
+        img{
+            width: 170px;
+            /* height: 60px; */
+        }
+        .navi-father2-son1,.navi-father2-son2,.navi-father2-son3,.navi-father2-son4,.navi-father2-son5,.navi-father2-son6,.navi-button-login,.navi-button-register{
+            margin-right: 15px;
+    
+        }
+        .navi-button-login,.navi-button-register{
+            width: 80px;
+            height: 28px;
+            border-radius: 15px;
+            border-style: none;
+            background-color: #5c5c5c;
+            color: white;
+        }
+        .navi-button-login:hover,.navi-button-register:hover{
+            width: 80px;
+            height: 28px;
+            border-radius: 15px;
+            border-style: none;
+            background-color: #4e6163;
+            color: white;
+        }
+        a{
+           text-decoration: none; 
+           color: white;
+        }
+        .mainpage{
+            background-image: url(hongkong1081704.jpg);
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .signup{
+            margin-top: -150px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .basic-signup, .diamond-signup, .gold-signup{
+            height: 420px;
+            width: 300px;
+            background-color: #9BA4B5;
+            box-shadow: #5c5c5c;
+
+            
+        }
+        .basic{
+            width: 100%;
+            height: 30px;
+            background-color: #191825;
+            font-weight: bold;
+            font-size: x-large;
+            text-align: center;
+            color: #ffffff;
+            padding: 15px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .gold{
+            width: 100%;
+            height: 30px;
+            background-color: #191825;
+            font-weight: bold;
+            font-size: x-large;
+            text-align: center;
+            color: #ffffff;
+            padding: 15px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .diamond{
+            width: 100%;
+            height: 30px;
+            background-color: #191825;
+            font-weight: bold;
+            font-size: x-large;
+            text-align: center;
+            color: #ffffff;
+            padding: 15px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .signup-list {
+            margin-bottom: 15px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            list-style: circle;
+        }
+        .signup-list1 {
+            margin-bottom: 15px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            list-style: circle;
+            margin-top: 15px;
+        }
+        .signup-list2 {
+            margin-bottom: 15px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            list-style: circle;
+            margin-top: 15px;
+        }
+        .signup-button{
+            width: 200px;
+            height: 50px;
+            position: relative;
+            left: 50px;
+            font-size: x-large;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background-color: rgb(69, 146, 146);
+            border: none;
+            border-radius: 25px;
+            margin-top: 10px;
+          
+        }
+        .signup-button:hover{
+            width: 220px;
+            height: 60px;
+            position: relative;
+            left: 40px;
+            font-size: x-large;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background-color: rgb(69, 146, 146);
+            border: none;
+            border-radius: 25px;
+            margin-top: 2px;
+          
+        }
+        .footer{
+            height: 300px;
+            background-color: #191825;
+            
+        }
+        .reward-sect1{
+            margin-top: 70px;
+        }
+        .reward-di{
+            display:flex ;
+            
+        }
+        .reward-sect2{
+            margin-top: 200px;
+        }
+        .heading1-reward{
+            font-size: xx-large;
+        }
+        .heading2-reward{
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            margin-top: 13px;
+        }
+        .f-data{
+            width: 80%;
+            margin-left: 40px;
+            /* margin-right: 20px; */
+        }
+        .footer-table{
+            margin-left: 200px;
+            margin-right: 200px;
+            width: 60%;
+            color: #e2dede;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+        .footer{
+            background-color: #191825;
+        }
+        .footor_tr th{
+            margin-bottom: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+        }
+        .tr-th{
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        
+ 
+        
+    </style>
+</head>
+<body>
+    <div class="navi-grandpa">
+        <div class="navi-father1">
+            <img src="payaid.png" alt="" class="navi-father1-son1">
+        </div>
+        <div class="navi-father2">
+            <section class="navi-father2-son1"><a href="">Solution</a></section>
+            <section class="navi-father2-son2"><a href=""> Industries</a></section>
+            <section class="navi-father2-son3"><a href="">Resources</a></section>
+            <section class="navi-father2-son4"><a href="">About</a></section>
+            <section class="navi-father2-son5"><a href="">Enterprises</a></section>
+            <section class="navi-father2-son6">
+                <form action="" class="navi-form">
+                    <button type="submit" class="navi-button-login"><a href="">Login</a></button>
+                    <button type="submit" class="navi-button-register"><a href="">Register</a></button>
+                </form>
+            </section>
+        </div>
+        <!-- <div class="navi-father3">
+            <form action="">
+                  <button type="submit" class="navi-father3-son1">Login</button>
+                  <button type="submit" class="navi-father3-son2">Register</button>
+            </form>
+        </div> -->
+    </div>
+    <div class="mainpage"></div>
+    <div class="signup">
+        <section class="basic-signup">
+            <p class="basic">Basic-Signup</p><br>
+            <ul>
+                <li class="signup-list">Two Account Accessable</li>
+                <li class="signup-list">Payment Integration</li>
+                <li class="signup-list">Bank Account</li>
+                <li class='signup-list'>Address Verified</li>
+                <li class='signup-list'>Fully Useable</li>
+                <li class='signup-list'>Transaction Limited</li>
+                <li class='signup-list'>Monthly Recharge</li>
+                <li class='signup-list'>Visa or Mastercard</li>
+            </ul>
+            <form action="">
+                <button type="submit" class="signup-button" id="button-form">Signup</button>
+            </form>
+        </section>
+        <section class="gold-signup">
+            <p class="gold">Gold-Signup</p>
+            <ul>
+                <li class='signup-list1'>Three Account Accessable</li>
+                <li class='signup-list1'>Payment Integration</li>
+                <li class='signup-list1'>Bank Account</li>
+                <li class='signup-list1'>Address Verified</li>
+                <li class='signup-list1'>Fully Useable</li>
+                <li class='signup-list1'>Transaction Limited</li>
+                <li class='signup-list1'>Yearly Recharge</li>
+                <li class='signup-list1'>Credit Card</li>
+            </ul>
+            <form action="">
+                <button type="submit" class="signup-button" form="button-form">Signup</button>
+            </form>
+        </section>
+        <section class="diamond-signup">
+            <p class="diamond">Diamond-Signup</p>
+            <ul>
+                <li class='signup-list2'>Five Account Accessable</li>
+                <li class='signup-list2'>Payment Integration</li>
+                <li class='signup-list2'>Bank Account</li>
+                <li class='signup-list2'>Address Verified</li>
+                <li class='signup-list2'>Fully Useable</li>
+                <li class='signup-list2'>Transaction Unlimited</li>
+                <li class='signup-list2'>Yearly Recharge</li>
+                <li class='signup-list2'>Credit Card</li>
+            </ul>
+            <form action="contact.html" id="but-form">
+                <button type="submit" class="signup-button" form="but-form">Signup</button>
+            </form>
+        </section>
+    </div>
+    <div class="reward-di">
+        <section class="reward-sect1"><img src="86b9bf13643a66047d1abb425065f1ee-removebg-preview.png" alt="" style="width: 600px;"></section>
+        <section class="reward-sect2"><h1 class="heading1-reward">Get Reward By Subscribing Premium</h1><h2 class="heading2-reward">You can get reward Subscribing our Premium Subscription. here you can get premium Subscription</h2></section>
+    </div>
+    <div class="reward-di">
+        <section class="reward-sect1"><img src="new-update-paper-banner-phone-mockup-vector-confetti-banner-important-message-tag-exclamation-mark-icon-social-story-post-template-great-job-speech-buuble-cell-phone-frame-banner-vector-400-249737926-.png" alt="" style="width: 600px;"></section>
+        <section class="reward-sect2"><h1 class="heading1-reward">Hot Sale For First Two Customer</h1><h2 class="heading2-reward">You can get Subription Free If You are First Two Cistomer. here you can get Free Subscription</h2></section>
+    </div><br><br><br>
+
+    <div class="footer">
+        <table class="footer-table">
+            <tr>
+                <th class="tr-th">Home</th>
+                <th class="tr-th">Packages</th>
+                <th class="tr-th">Events</th>
+                <th class="tr-th">About</th>
+                <th class="tr-th">Help</th>
+            </tr>
+            <tr class="footor_tr">
+                <a href=""><th>Team</th></a>
+                <a href=""><th>Services</th></a>
+                <a href=""><th>Workers</th></a>
+                <a href=""><th>Member</th></a>
+                <a href=""><th>FAQ</th></a>
+            </tr>
+            <tr class="footor_tr">
+                <a href=""><th>Managers</th></a>
+                <a href=""><th>Sweepers</th></a>
+                <a href=""><th>Jobs</th></a>
+                <a href=""><th>Queries</th></a>
+                <a href=""><th></th></a>
+            </tr>
+            <tr class="footor_tr">
+                <a href=""><th>Average</th></a>
+                <a href=""><th>Experienced</th></a>
+                <a href=""><th>Bonus</th></a>
+                <a href=""><th>MBA</th></a>
+                <th></th>
+            </tr>
+            <tr class="footor_tr">
+                <a href=""><th>Q/A</th></a>
+                <a href=""><th>Security</th></a>
+                <a href=""><th>Morning</th></a>
+                <th></th>
+                <th></th>
+            </tr> 
+        </table>
+
+    </div>
+    
+</body>
+</html>
